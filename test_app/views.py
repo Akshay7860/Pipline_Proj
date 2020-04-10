@@ -11,7 +11,6 @@ class TestView(APIView):
     def post(self, request, format=None):
         try:
             data = request.data
-            print (data)
             a = data.get("a")
             b = data.get("b")
             return Response({"Total":int(int(a)+int(b))},status=status.HTTP_200_OK)
