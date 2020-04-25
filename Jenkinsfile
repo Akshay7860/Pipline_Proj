@@ -1,6 +1,3 @@
- 
-#!groovy
-
 node {
 
     try {
@@ -11,7 +8,7 @@ node {
             def lastChanges = readFile('GIT_CHANGES')
             slackSend color: "warning", message: "Started `${env.JOB_NAME}#${env.BUILD_NUMBER}`\n\n_The changes:_\n${lastChanges}"
 
-        
+
         stage 'Deploy'
             sh './deployment/deploy_prod.sh'
 
