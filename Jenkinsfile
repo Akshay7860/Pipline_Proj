@@ -9,7 +9,7 @@ node {
 
         stage 'Deploy'
         
-            sh './deployment/deploy_prod.sh'
+            sudo sh './deployment/deploy_prod.sh'
 
     }
 
