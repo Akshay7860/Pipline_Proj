@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh root@13.233.151.193 <<EOF
+ssh root@13.126.194.182 <<EOF
   cd /var/www/Pipline_Proj/
   git pull
   source /var/www/cicd_env/bin/activate
