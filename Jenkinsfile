@@ -8,7 +8,7 @@ node {
 
 
         stage 'Deploy'
-            sh sudo su
+        
             sh './deployment/deploy_prod.sh'
 
     }
