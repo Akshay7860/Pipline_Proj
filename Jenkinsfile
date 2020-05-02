@@ -8,7 +8,7 @@ node {
 
 
         stage 'Deploy'
-            sh './deployment/deploy_prod.sh'
+            sh '/var/www/Pipline_Proj/deployment/deploy_prod.sh'
 
     }
 
