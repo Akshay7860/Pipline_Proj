@@ -8,7 +8,7 @@ node {
 
 
         stage 'Deploy'
-            sh '/home/ubuntu/deployment/deploy_prod.sh'
+            sh '/home/ubuntu/deploy_prod.sh'
 
     }
 
